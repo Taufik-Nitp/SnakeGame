@@ -173,10 +173,8 @@ window.addEventListener('keydown', (e) => {
     inputDir.x = -1
     inputDir.y = 0
   })
-  document
-    .getElementById('arrowRight')
-    .addEventListener('ontouchstart', (e) => {
-      inputDir.x = 1
-      inputDir.y = 0
-    })
+  document.getElementById('arrowRight').addEventListener('touchstart', (e) => {
+    inputDir.x = 1
+    inputDir.y = 0
+  })
 })
