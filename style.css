@@ -96,6 +96,39 @@
 
 .directions {
   position: absolute;
-  left: 90px;
-  bottom: 90px;
+  left: 0px;
+  bottom: 0px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+  .directions {
+    position: absolute;
+    left: 135px;
+    bottom: 0px;
+  }
+
+  #name {
+    background-color: yellow;
+    border: 5px solid green;
+    height: 128px;
+    width: 127px;
+    position: absolute;
+    top: 16px;
+    left: 30px;
+    font-size: 16px;
+    font-style: italic;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  #scoreBoard {
+    background-color: yellow;
+    border: 5px solid green;
+    height: 127px;
+    width: 128px;
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    font-size: 35px;
+  }
 }
