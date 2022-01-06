@@ -159,4 +159,22 @@ window.addEventListener('keydown', (e) => {
     default:
       break
   }
+
+  document.getElementById('arrowUp').addEventListener('click', (e) => {
+    inputDir.x = 0
+    inputDir.y = -1
+  })
+
+  document.getElementById('arrowDown').addEventListener('click', (e) => {
+    inputDir.x = 0
+    inputDir.y = 1
+  })
+  document.getElementById('arrowLeft').addEventListener('click', (e) => {
+    inputDir.x = -1
+    inputDir.y = 0
+  })
+  document.getElementById('arrowRight').addEventListener('click', (e) => {
+    inputDir.x = 1
+    inputDir.y = 0
+  })
 })

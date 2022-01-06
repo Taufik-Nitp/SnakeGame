@@ -69,3 +69,33 @@
   align-items: center;
   padding-left: 30px;
 }
+
+#arrowUp {
+  position: absolute;
+  bottom: 90px;
+  left: 50px;
+}
+
+#arrowDown {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+
+#arrowLeft {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+}
+
+#arrowRight {
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
+}
+
+.directions {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+}
