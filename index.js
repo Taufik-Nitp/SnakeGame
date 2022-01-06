@@ -160,16 +160,16 @@ window.addEventListener('keydown', (e) => {
       break
   }
 
-  document.getElementById('arrowUp').addEventListener('ontouchstart', (e) => {
+  document.getElementById('arrowUp').addEventListener('touchstart', (e) => {
     inputDir.x = 0
     inputDir.y = -1
   })
 
-  document.getElementById('arrowDown').addEventListener('ontouchstart', (e) => {
+  document.getElementById('arrowDown').addEventListener('touchstart', (e) => {
     inputDir.x = 0
     inputDir.y = 1
   })
-  document.getElementById('arrowLeft').addEventListener('ontouchstart', (e) => {
+  document.getElementById('arrowLeft').addEventListener('touchstart', (e) => {
     inputDir.x = -1
     inputDir.y = 0
   })
