@@ -3,7 +3,7 @@ const foodSound = new Audio('music/food.mp3')
 const gameOverSound = new Audio('music/gameover.mp3')
 const moveSound = new Audio('music/move.mp3')
 const musicSound = new Audio('music/music.mp3')
-let speed = 12
+let speed = 5
 let lastPaintTime = 0
 let board = document.getElementById('board')
 let food = { x: 4, y: 6 }
@@ -58,6 +58,10 @@ function gameEngine() {
     musicSound.play()
     score = 0
   }
+  if (snakeArr.length > 15) {
+    speed = snakeArr.length / 3
+  }
+
   // if snake eat the food
 
   if (snakeArr[0].x === food.x && snakeArr[0].y === food.y) {
