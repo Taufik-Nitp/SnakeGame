@@ -164,20 +164,22 @@ window.addEventListener('keydown', (e) => {
 
   /// touch events for mobile
 
-  document.getElementById('arrowUp').addEventListener('touchstart', (e) => {
+  document.getElementById('arrowUp').addEventListener('click', (e) => {
     inputDir.x = 0
     inputDir.y = -1
   })
 
-  document.getElementById('arrowDown').addEventListener('touchstart', (e) => {
+  document.getElementById('arrowDown').addEventListener('click', (e) => {
     inputDir.x = 0
     inputDir.y = 1
   })
-  document.getElementById('arrowLeft').addEventListener('touchstart', (e) => {
+
+  document.getElementById('arrowLeft').addEventListener('click', (e) => {
     inputDir.x = -1
     inputDir.y = 0
   })
-  document.getElementById('arrowRight').addEventListener('touchstart', (e) => {
+
+  document.getElementById('arrowRight').addEventListener('click', (e) => {
     inputDir.x = 1
     inputDir.y = 0
   })
